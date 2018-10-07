@@ -1,0 +1,57 @@
+body {
+   font-family: 'K2D', sans-serif;
+}
+
+p.label {
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#form-user {
+/*    left: 10%;*/
+}
+
+input.input-basic {
+    width: 35%;
+}
+
+div.form-user {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin: 5%;
+    padding: 2%;
+    width: 50%;
+}
+
+div.checkbox-form {
+    margin-bottom: 2%;
+    margin-top: 2%;
+
+}
+
+#form-user > fieldset > input {
+    background-color: #fff;
+}
+
+#form-user > button {
+    background-color: #a2462b;
+    color: #fff;
+}
+
+/*::-webkit-input-placeholder {  Chrome/Opera/Safari */
+/*    font-size: 0.8em;*/
+/*}*/
+/*::-moz-placeholder {  Firefox 19+ */
+/*        font-size: 0.8em;*/
+
+/*}*/
+/*:-ms-input-placeholder {  IE 10+ */
+/*        font-size: 0.8em;*/
+
+/*}*/
+/*:-moz-placeholder {  Firefox 18- */
+/*        font-size: 0.8em;*/
+
+/*}*/

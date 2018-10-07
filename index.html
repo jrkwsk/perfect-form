@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=K2D:100" rel="stylesheet">
+    <title>formularz</title>
+</head>
+
+<body>
+    <div class="form-user">
+        <h4>Dane zamawiającego</h4>
+        <p>(dane do wysyłki)</p>
+
+        <form id="form-user" method="POST">
+
+            <p class="label">IMIĘ i NAZWISKO*</p>
+            <input class="input-basic" id="name" type="text" name="name" required/>
+
+            <p class="label">FIRMA</p>
+            <input class="input-basic" type="text" name="company" />
+
+            <p class="label">ULICA, NR DOMU/MIESZKANIA*</p>
+            <input class="input-basic" type="text" name="street" required/>
+
+            <p class="label">KOD POCZTOWY*</p>
+            <input class="input-basic" type="text" placeholder="00000" maxlength="5" name="postcode" required/>
+
+            <p class="label">MIASTO*</p>
+            <input class="input-basic" type="text" name="postcode_and_city" required />
+            <fieldset disabled>
+                <p class="label">KRAJ*</p>
+                <input class="input-basic" type="text" name="customer_country" value="Polska" required />
+            </fieldset>
+
+            <p class="label">NR TELEFONU*</p>
+            <input class="input-basic" type="text" name="telephone" required/>
+
+            <p class="label">ADRES E-MAIL*</p>
+            <input class="input-basic" type="email" name="email" required/>
+
+            <p class="label">UWAGI DO ZAMÓWIENIA</p>
+            <input class="input-basic" name="notice" />
+
+            <div class="checkbox-form">
+                <div><input type="checkbox" name="fv" /> <span class="small">CHCĘ OTRZYMAĆ FAKTURĘ VAT</span></div>
+                <div><input type="checkbox" name="rules" required/> <span class="small">AKCEPTUJĘ <a target="_blank" href="../regulamin.html">Regulamin i Politykę Prywatności</a></span></div>
+
+            </div>
+
+
+            <button type="button" class="final-send btn btn-outline-dark">PRZEJDŹ DO PŁATNOŚCI</button>
+
+
+            <!--
+        <div class="preloader_hidden" id="preloader">
+            <img src="../img/preloader.png" alt="preloader maptu mapy">
+        </div>
+-->
+
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!--
+to do:
+ maskowanie
+-->
+
+</body>
+
+</html>
